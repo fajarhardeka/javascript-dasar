@@ -21,7 +21,7 @@ console.log(""); // Jeda pada console
 // Destructuring pada variable yang sudah dideklrasikan
 const aboutKulo = {
     namiNgajeng: "Udin",
-    namiWingking: "Jawed",
+    namiWingking: "Jamrud",
     yuswa: 23 
 }
 
@@ -29,7 +29,17 @@ let namiNgajeng = "Jamals";
 let yuswa = 24;
 
 // Menginisialisasi nilai baru melalui destructuring object
-({ namiNgajeng, yuswa } = aboutKulo);
+({ namiNgajeng, yuswa, isJaler = true, isEstri } = aboutKulo);
 
 console.log(namiNgajeng);
 console.log(yuswa);
+console.log(isJaler);
+console.log(isEstri); // Undefined
+
+console.log("")
+
+const { namiNgajeng: localNamiNgajeng, namiWingking: localNamiWingking, yuswa: localYuswa } = aboutKulo;
+
+console.log(localNamiNgajeng);
+console.log(localNamiWingking);
+console.log(localYuswa);

@@ -36,7 +36,7 @@ console.log(yuswa);
 console.log(isJaler);
 console.log(isEstri); // Undefined
 
-console.log("")
+console.log("");
 
 const { namiNgajeng: localNamiNgajeng, namiWingking: localNamiWingking, yuswa: localYuswa } = aboutKulo;
 
